@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Template using LaTeX  Tutorial tex files								%%
+%%      																		%%
+%%      Copyright Rho Vector Latex Tutorial 2021								%%
+%%		rhovector <rhovector@gmail.com>			 								%%
+%%		vivekadi <vivek.adishesha@gmail.com>,									%%
+%%		chiranjitpatel <chiranjitpatel08@gmail.com>								%%
+%%																				%%
+%%																				%%	
+%%      This program is FREE SOFTWARE; you can redistribute it and/or modify	%%
+%%      it under the terms of the GNU General Public License as published by	%%
+%%      the Free Software Foundation; either version 2 of the License, or		%%
+%%      (at your option) any later version.										%%
+%%      																		%%
+%%      This program is distributed in the hope that it will be useful,			%%
+%%      but WITHOUT ANY WARRANTY; without even the implied warranty of			%%
+%%      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.					%%
+%%      See GNU General Public License for more details.						%%
+%%      																		%%
+%%      You should have received a copy of the GNU General Public License		%%
+%%      along with this program; if not, write to the Free Software				%%
+%%      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,				%%
+%%      MA 02110-1301, USA.														%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\documentclass{article}
+
+%% package xcolor for colored fonts and intensities %%
+\usepackage{xcolor}
+
+\begin{document}
+	
+	%% Normal, Bold, & Italics text %%
+	Normal Text \\
+	
+	\textbf{Bold Text}\\
+	
+	\textit{Italics Text}\\
+	
+	\textbf{\textit{Bold + Italics}}\\
+	=======================================							
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+							
+	%% Text size %%
+	\tiny{TINY text}\\
+	
+	\scriptsize{SCRIPT size text}\\
+	
+	\footnotesize{FOOTNOTE size text}\\
+	
+	\small{SMALL size text}\\
+
+	\normalsize{NORMAL size text}\\
+	
+	\large{large size text}\\
+	
+	\Large{Large size text}\\
+	
+	\LARGE{LARGE size text}\\
+	
+	\huge{huge size text}\\
+	
+	\Huge{Huge size text}\\
+	
+	\normalsize
+	=======================================							
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+													
+	%% Text Colors, "\color{colorname!intesity_value}" , the insiti of color can be altered %%
+	\textbf{\Large{\textit{Color Text}}}\\
+	
+	\Large\textbf{\color{red} Red Text}		\hspace{3cm}	\Large\textbf{\color{red!50} Red Text}\\
+	
+	\Large\textbf{\color{blue} Blue Text}	\hspace{2.9cm}	\Large\textbf{\color{blue!50} Blue Dull Text}\\
+	
+	\Large\textbf{\color{green} Green Text}	\hspace{2.5cm}	\Large\textbf{\color{green!50} Green Dull Text}
+	
+	\normalsize
+	=======================================								
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\vspace{1cm}
+	%% Special Characters %%
+	%% Place the charcter after a backslash "\" %%
+	\textbf{\Large{\textit{Special Characters}}}\\
+	
+	\textbf{Ampersand \&}\\
+	
+	\textbf{Type II Ampersand \textit{\&}}\\
+	
+	\textbf{Dollar \$}\\
+	
+	\textbf{Backslash \textbackslash}\\
+	
+	\textbf{Underscore \_}\\
+	
+	\textbf{Hash \#}\\
+	
+	\textbf{Percentage \%}\\
+	
+	\textbf{Caret symbol \^}\\
+	
+	\textbf{At the rate @}\\		%% @ doesn't require backslash %%
+	
+	\textbf{Exclamation !}\\		%% ! doesn't require backslash %%	
+	=======================================								
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\textbf{\Large{\textit{Bullets} \& \textit{Numbering}}}\\
+	
+	%% Bullets, the art can also be chaged to star and other variants %%
+	%% begin itemize block for bullets, use "\item" for a new point %%
+	\begin{itemize}
+		\item The lack of nighttime performance necessitates the need for costly batteries and grid connection to other sources of energy, most notably fossil fuels.
+		\item To continue the global push toward carbon neutrality, new sustainable power generation techniques must be employed at night as well.
+
+		\item In practice, Nighttime PV cells can be used as waste heat recovery units in order to extract power from a hot source, for example, an engine’s exhaust pipe, a generator’s cooling towers, or other heat sources in industrial manufacturing plants.
+
+	\end{itemize}
+	%% end itemize block %%
+
+	%% Numbering the points, begin enumeratr block %%
+	\begin{enumerate}
+		\item The lack of nighttime performance necessitates the need for costly batteries and grid connection to other sources of energy, most notably fossil fuels.
+		\item To continue the global push toward carbon neutrality, new sustainable power generation techniques must be employed at night as well.
+
+		\item In practice, Nighttime PV cells can be used as waste heat recovery units in order to extract power from a hot source, for example, an engine’s exhaust pipe, a generator’s cooling towers, or other heat sources in industrial manufacturing plants.
+
+	\end{enumerate}
+	%% end enumerate block %%
+
+	%% Description based ordering of points, begin description block %%
+	\begin{description}
+		\item[Fisrt]  The lack of nighttime performance necessitates the need for costly batteries and grid connection to other sources of energy, most notably fossil fuels.
+		\item[Second] To continue the global push toward carbon neutrality, new sustainable power generation techniques must be employed at night as well.
+		\item[Third] In practice, Nighttime PV cells can be used as waste heat recovery units in order to extract power from a hot source, for example, an engine’s exhaust pipe, a generator’s cooling towers, or other heat sources in industrial manufacturing plants.
+	\end{description}
+	%% end description block %%
+	=======================================	
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%							
+	
+\end{document}
