@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Template using LaTeX  Tutorial tex files								%%
+%%      																		%%
+%%      Copyright Rho Vector Latex Tutorial 2021								%%
+%%		rhovector <rhovector@gmail.com>			 								%%
+%%		vivekadi <vivek.adishesha@gmail.com>,									%%
+%%		chiranjitpatel <chiranjitpatel08@gmail.com>								%%
+%%																				%%
+%%																				%%	
+%%      This program is FREE SOFTWARE; you can redistribute it and/or modify	%%
+%%      it under the terms of the GNU General Public License as published by	%%
+%%      the Free Software Foundation; either version 2 of the License, or		%%
+%%      (at your option) any later version.										%%
+%%      																		%%
+%%      This program is distributed in the hope that it will be useful,			%%
+%%      but WITHOUT ANY WARRANTY; without even the implied warranty of			%%
+%%      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.					%%
+%%      See GNU General Public License for more details.						%%
+%%      																		%%
+%%      You should have received a copy of the GNU General Public License		%%
+%%      along with this program; if not, write to the Free Software				%%
+%%      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,				%%
+%%      MA 02110-1301, USA.														%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\documentclass{article}
+
+%% Invoke inbuilt / MikTex packages for more sublime text editing %% 
+\usepackage{ragged2e}	%% ragged2e is used for justification %%
+
+\begin{document}
+	
+	%% Method -1 Center Alignment, this align the complete document from this line to center %%
+	\centering					%% Center Alignment of texts in a document using "\centering" function %%
+	\textbf{\textit{Center aligned texts Method - 1.}} \\
+	
+	So in this example we have considered Total System is represented by the tensor product of the particles and we can clearly see that the final state can be factored	into tensor product of each individual particle.
+	========================================
+					%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+	
+	%% Method -2 Center Alignment %%
+	%% begin center, this makes all the object like text, image, table, and others inside this block to have center alignment %%
+	\begin{center}
+		
+	\textbf{\textit{Center aligned texts Method - 2.}} \\
+	
+	All quantum gate operations are linear and reversible. This is because the very nature of quantum mechanics is reversibility and linearity. Since quantum mechanical operations are linear so quantum gates which perform these operations are represented by matrices.
+	
+	\end{center}
+	%% end the center align block %%
+	=======================================
+					%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+					
+	%% Left Alignment %%
+	%% begin flushleft block to left justify all the text, images, tables and other objects of interest %%
+	\begin{flushleft}
+		
+		\textbf{\textit{Left justified texts.}}\\
+		
+		A system of several qubits can now be associated with a system of several QSL bits containing two internal bits each. A QSL simulation of the quantum Controlled-NOT (CNOT) gate can be constructed from two classical reversible logic CNOTs.
+		
+	\end{flushleft}
+	%% end the flushleft block %%
+	=======================================
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%% Right Alignment %%
+	%% begin flushright block to right justify the objects %%
+	\begin{flushright}
+		
+		\textbf{\textit{Right justified texts.}}\\
+		
+		We need to point out that our task is not to create exact Toffoli gate equivalents, or even simulate the full quantum-mechanical system as such. It suffices to give a working efficient QSL version of the Deutsch–Jozsa algorithm.
+		
+	\end{flushright}
+	%% end flushright block %%
+	=======================================
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%% End to End Justify text %%
+	%% Package "ragged2e" to be used, begin justify block to end to end justify the objects inside %%
+	\begin{justify}
+		
+		%% Paragraph Spacing and new paragraph starts are described below with different cases %%
+		
+		\textit{\textbf{End to End justified text.}}\\
+		
+		If the quantum oracle is a constant function the probability of the initial states changing is 0. Hence the first 3 qubits have retained their initial states of 0. In case of a balanced function the probability of the initial states changing is 1 hence the resultant states of the first 3 qubits have changed from 0 to 1. %% New paragraph with a space after previous paragraph %%
+		
+		Accordingly, measurement of the phase bit will be followed by a randomization
+		of the computational bit. These constructions of state preparation and measurement
+		prohibit exact preparation and readout of the system. %% New paragraph without space in between %%
+		Devised QSL equivalents of the Deutsch–Jozsa and Simon’s quantum algorithms. In
+		the quantum algorithm, you are given a black-box quantum oracle, a unitary gate that
+		implements f by acting on qubits, your task is to distinguish two or more families of
+		functions.\\   %% New paragraph with additional space from "\\" %%
+		
+		In the presented QSL algorithms, you are given a black-box QSL gate that implements f by acting on QSL systems, and the same task. Using the QSL framework, we obtain the same success probability and the same time and space complexity as for the quantum algorithms, and these QSL algorithms are in turn efficiently simulatable in classical Turing machines.
+
+	\end{justify}			
+	=======================================							
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%% Verical between objects %%
+	\textbf{\textit{Verical space.}}\\
+	So in this example we have considered Total System is represented by the tensor product of the particles and we can clearly see that the final state can be factored	into tensor product of each individual particle.
+	VERTICAL SPACE OF 3CM
+	
+	\vspace{3cm}  %% vspace is given lenght of separation %%
+	
+	A system of several qubits can now be associated with a system of several QSL bits containing two internal bits each. A QSL simulation of the quantum Controlled-NOT (CNOT) gate can be constructed from two classical reversible logic CNOTs.
+	=======================================							
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%% Horizontal space between objects %%
+	\textbf{\textit{Horizontal space.}}\\
+	
+	Horizontal space of 3CM.\\
+	
+	\textbf{\textit{Object 1}}  \hspace{3cm} \textbf{\textit{Object 2}} %% hspace is fed length of separation%%
+	=======================================								
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%% Paragraph function, title for each paragraph can be displayed, "\paragraph(title)" %%
+	%% This is another method of having spearated paragraphs %%
+	\paragraph{Para -1}Accordingly, measurement of the phase bit will be followed by a randomization
+	of the computational bit. These constructions of state preparation and measurement
+	prohibit exact preparation and readout of the system.
+	\paragraph{Para -2}Devised QSL equivalents of the Deutsch–Jozsa and Simon’s quantum algorithms. In
+	the quantum algorithm, you are given a black-box quantum oracle, a unitary gate that
+	implements f by acting on qubits, your task is to distinguish two or more families of
+	functions.
+	=======================================									
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						
+						
+						
+\end{document}
+	
