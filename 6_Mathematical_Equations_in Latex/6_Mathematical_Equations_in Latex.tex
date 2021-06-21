@@ -1,0 +1,96 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Template using LaTeX  Tutorial tex files								%%
+%%      																		%%
+%%      Copyright Rho Vector Latex Tutorial 2021								%%
+%%		rhovector <rhovector@gmail.com>			 								%%
+%%		vivekadi <vivek.adishesha@gmail.com>,									%%
+%%		chiranjitpatel <chiranjitpatel08@gmail.com>								%%
+%%																				%%
+%%																				%%	
+%%      This program is FREE SOFTWARE; you can redistribute it and/or modify	%%
+%%      it under the terms of the GNU General Public License as published by	%%
+%%      the Free Software Foundation; either version 2 of the License, or		%%
+%%      (at your option) any later version.										%%
+%%      																		%%
+%%      This program is distributed in the hope that it will be useful,			%%
+%%      but WITHOUT ANY WARRANTY; without even the implied warranty of			%%
+%%      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.					%%
+%%      See GNU General Public License for more details.						%%
+%%      																		%%
+%%      You should have received a copy of the GNU General Public License		%%
+%%      along with this program; if not, write to the Free Software				%%
+%%      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,				%%
+%%      MA 02110-1301, USA.														%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\documentclass{article}
+
+\begin{document}
+	
+	%% Inline Equations  with $eqn$ SHift + ctrl + M %%
+	$\frac{1} {s^2} Tanh(\frac{{as}}{2}) $
+	
+	%% Equation block, begin equation block %%
+	\begin{equation}
+		L\{ f(t)\}  = \frac{1}{{1 - {e^{ - sT}}}}[\int\limits_0^a {t{e^{ - st}}dt\; + \;\int\limits_a^{2a} {(2a - t){e^{ - st}}dt]} }	
+	\end{equation}
+	
+	
+	%% Equation labelling shift + ctrl + n %%
+	\begin{equation}\label{eqn:2}
+		\frac{1}{{1 - {e^{ - s2a}}}}[(\frac{{t{e^{ - st}}}}{{ - s}} + \frac{{{e^{ - st}}}}{{ - {s^2}}})_0^a + (\frac{{2a{e^{ - st}}}}{{ - s}})_a^{2a} - (\frac{{t{e^{ - st}}}}{{ - s}} - \frac{{{e^{ - st}}}}{{{s^2}}})_a^{2a}]		
+	\end{equation}
+	\\
+	
+	%% Referencing the equation %%
+	Solving Laplace transforms with integrals. Described in \textit{Equation} \ref{eqn:2}\\
+	
+	%% Multiline Equation %%
+	\begin{equation}\label{eqn:3}
+		\begin{array}{l}
+			f(0) = f(1) \to Constant\\
+			factorizing{{ }}\;we\;{{get : }}\left| {{\psi _c}} \right\rangle  = \frac{1}{2}\left( {\left| {{0_1}} \right\rangle  - \left| {{1_1}} \right\rangle } \right)\left( {\left| {f{{(0)}_2}} \right\rangle  - \left| {\overline {f{{(0)}_2}} } \right\rangle } \right)\\
+			If{{ : }}f(0) = \overline {f(1)}  \to Balanced\\
+			factorizing{{ }}\;we\;{{get : }}\left| {{\psi _c}} \right\rangle  = \frac{1}{2}\left( {\left| {{0_1}} \right\rangle  + \left| {{1_1}} \right\rangle } \right)\left( {\left| {f{{(0)}_2}} \right\rangle  - \left| {\overline {f{{(0)}_2}} } \right\rangle } \right)
+		\end{array}
+	\end{equation}
+	\\
+	
+	\begin{equation}\label{eqn:4}
+		\frac{1}{2}L[\sin t(\cos t - \cos 5t)]
+	\end{equation}
+
+	\begin{eqnarray} \label{eqn:5}
+		\frac{{\partial \psi }}{{\partial t}} =  - jw{\psi _0}{e^{ - jwt}} =  - j2\pi \left( {\frac{E}{H}} \right){\psi _0}{e^{ - jwt}}
+	\end{eqnarray}
+	
+	%% Example %%
+	\begin{equation}\label{eqn:6}
+		\frac{1}{{\sqrt {{2^n}} }}\sum\limits_{x = 0}^{{2^n} - 1} {{{( - 1)}^{f(x)}}} \left[ {\frac{1}{{\sqrt {{2^n}} }}\sum\limits_{y = 0}^{{2^n} - 1} {{{( - 1)}^{x \cdot y}}} |y\rangle } \right] = \frac{1}{{{2^n}}}\sum\limits_{y = 0}^{{2^n} - 1} {\left[ {\sum\limits_{x = 0}^{{2^n} - 1} {{{( - 1)}^{f(x)}}} {{( - 1)}^{x \cdot y}}} \right]} |y\rangle]		
+	\end{equation}
+
+	\pagebreak
+	
+	\textit{{\LARGE Equations that Changed the world}   (Few Mentions)}\\
+	
+		\[{		\alpha ^2} + {\beta ^2} = {\gamma ^2}		\]
+	
+	\[		\log (xy) = \log x + \log y			\]
+	
+	\[		F = G\frac{{m_1}{m_2}}{r^2}			\]
+	
+	\[      \Phi (x) = \frac{1}{\sqrt {2\pi \sigma }} {e^{ - \frac{(x - \mu )^2}  {2\sigma ^2}  }}      \]
+	
+	\[      \frac{{\partial ^2}u}  {\partial {t^2}}  = {c^2} \frac{{\partial ^2}u} {\partial {x^2}}     \]
+	
+	\[		f(w) = \int\limits_{ - \infty }^\infty  {f(x){e^{ - 2\pi ixw}}dx} 		\]
+	
+	\[		\nabla  \cdot E = \frac{\rho }  {\varepsilon _0}		\]
+	
+	\[		\nabla  \times B = {\mu _0}  \left( {J + {\varepsilon _0} \frac {\partial E}  {\partial t}} \right)		\]
+	
+	\[		H =  - \sum {p(x)\log p(x)} 		\]
+	
+\end{document}
