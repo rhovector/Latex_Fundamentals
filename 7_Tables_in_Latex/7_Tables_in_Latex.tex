@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Template using LaTeX  Tutorial tex files								%%
+%%      																		%%
+%%      Copyright Rho Vector Latex Tutorial 2021								%%
+%%		rhovector <rhovector@gmail.com>			 								%%
+%%		vivekadi <vivek.adishesha@gmail.com>,									%%
+%%		chiranjitpatel <chiranjitpatel08@gmail.com>								%%
+%%																				%%
+%%																				%%	
+%%      This program is FREE SOFTWARE; you can redistribute it and/or modify	%%
+%%      it under the terms of the GNU General Public License as published by	%%
+%%      the Free Software Foundation; either version 2 of the License, or		%%
+%%      (at your option) any later version.										%%
+%%      																		%%
+%%      This program is distributed in the hope that it will be useful,			%%
+%%      but WITHOUT ANY WARRANTY; without even the implied warranty of			%%
+%%      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.					%%
+%%      See GNU General Public License for more details.						%%
+%%      																		%%
+%%      You should have received a copy of the GNU General Public License		%%
+%%      along with this program; if not, write to the Free Software				%%
+%%      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,				%%
+%%      MA 02110-1301, USA.														%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass{article}
+
+
+%% Packages for complex tables, ``Float'' for positioning %%
+%% ``multirow'' is for multrow * column %%
+%% ``booktabs'' is for toprule and bottomrule %%
+%% tabulary is another segment of tabular %%
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{tabulary}
+
+\begin{document}
+	
+	%% Wizard option in TeXStudio can be utilized, for ``Quick Tabular'' %%
+	%% This GUI Tool helps to generate tables with multiple rows and columns %%
+	
+	%% Creating Tables with ``table'' block %%
+	{\Large \textbf{\textit{Simple Table from Wizard}}}
+	\begin{table}[H]
+		\centering
+		\caption{Random table}
+		\label{tab:1}
+		\begin{tabular}{c||c|c|c}
+			\hline
+			X & Col1 & Col2 & Col3 \\
+			\hline
+			\hline
+			Row1 & 1 & 2 & 3 \\	
+			Row2 & 4 & 5 & 6 \\
+			Row3 & 7 & 8 & 9 \\	
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	%% Referencing the table with label and ref %%
+	The lack of nighttime performance necessitates the need for costly batteries and grid connection to other sources of energy, most notably fossil fuels. Described in the \textit{Table} \ref{tab:1}.
+	
+	=======================================	
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagebreak
+	
+	%% Multirow and Multi column tables %%
+	%% Example - 1 %%
+	
+	{\Large \textbf{\textit{Multirow / multicolumn Table - 1}}}
+	\begin{table}[H]
+		\centering
+		\caption{Events and Response for keyboard and mouse inputs from user}
+		\label{tab:events}
+		\begin{tabular}{p{5.5cm} p{8.5cm}}
+			\toprule                        %% this uses the ``booktabs'' package %%
+			
+			\textbf{Event} &     
+			\textbf{Response}   \\ \hline
+			
+			\textbf{pygame.QUIT} occurs when trying to close the window &       
+			Quitting the pygame window using pygame. quit and then quitting the application using quit. \\ \hline   
+			
+			\textbf{pygame.VIDEORESIZE} occurs when trying to resize the pygame window & 
+			Changing the viewing parameters such that the aspect ratio remains unchanged so that the object looks the same without any distortion \\ \hline   
+			
+			\multirow{7}{*}{\textbf{pygame.KEYDOWN}} &
+			\textbf{1.} If key is \textbf{0-9} then the current\_box is set to the corresponding key value \\ \cline{2-2} &
+			\textbf{2.} If key is the \textbf{left} arrow key, storing the move variable with traslation matrix in the \textbf{\textit{x}} direction by \textit{+0.01} pixels. Then the \textit{curr\_move} is updated with \textit{curr\_move=curr\_move+move} \\ \cline{2-2} &
+			\textbf{3.} If key is the \textbf{right} arrow key, storing the move variable with traslation matrix in the \textbf{\textit{x}} direction by \textit{-0.01} pixels. Then the \textit{curr\_move} is updated with \textit{curr\_move=curr\_move+move} \\ \cline{2-2} &
+			\textbf{4.} If key is the \textbf{up} arrow key, storing the move variable with traslation matrix in the \textbf{\textit{y}} direction by \textit{+0.01} pixels. Then the \textit{curr\_move} is updated with \textit{curr\_move=curr\_move+move}  \\ \cline{2-2} &
+			\textbf{5.} If key is the \textbf{down} arrow key, storing the move variable with traslation matrix in the \textbf{\textit{y}} direction by \textit{-0.01} pixels. Then the \textit{curr\_move} is updated with \textit{curr\_move=curr\_move+move}  \\ \cline{2-2} &
+			\textbf{6.} If key is the \textbf{X} arrow key, storing the move variable with traslation matrix in the \textbf{\textit{z}} direction by \textit{+0.01} pixels. Then the \textit{curr\_move} is updated with \textit{curr\_move=curr\_move+move}  \\ \cline{2-2} &
+			\textbf{7.} If key is the \textbf{Z} arrow key, storing the move variable with traslation matrix in the \textbf{\textit{z}} direction by \textit{-0.01} pixels. Then the \textit{curr\_move} is updated with \textit{curr\_move=curr\_move+move}  \\	
+			\hline
+			
+		\end{tabular}
+	\end{table}	
+	=======================================	
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagebreak
+
+	%% Example -2 for multirow & multicolumn %%
+	{\Large \textbf{\textit{Multirow / multicolumn Table - 2}}}
+	\begin{table}[H]
+		\caption{{Analysis of exponential factoring to weighted factoring} }
+		\label{tw-83ee4a2ad90e}
+		\def\arraystretch{1}
+		\ignorespaces 
+		\centering \fontsize{7}{8}\selectfont\sf  
+		\begin{tabulary}{\linewidth}{LLLLLLLLLLLLLLL}
+			\hline
+			\\
+			Mean Filter&
+			Parameter &
+			\multicolumn{4}{c|}{Gaussian}  & \multicolumn{4}{c|}{Speckle} & \multicolumn{4}{c|}{Salt-Pepper} \\
+			&& Exp W & Exp B & Factor W& Factor B&
+			Exp W & Exp B & Factor W& Factor B&
+			Exp W & Exp B & Factor W &Factor B\\
+			\hline
+			\\
+			
+			\multirow{2}{*}{Heron}
+			&MSE: & 0.096& 0.020 & 0.161&0.040 & 0.098 & 0.001 & 0.180 &0.001 & 0.069 & 0.026 & 0.161 & 0.040 \\
+			&PSNR: & 10.169& 16.807 & 7.908& 13.973 & 10.068& 27.25 & 7.436& 29.558 & 11.592& 15.812 & 6.727& 12.960   \\
+			
+			\hline
+			\\
+			\multirow{2}{*}{Centroidal}
+			&MSE: & 0.034 & 0.087 & 0.062 & 0.028 & 0.033 & 0.0012&0.066&0.0049&0.034&0.0012&0.068&0.419 \\
+			&PSNR: & 14.100 & 10.579 & 12.076 & 5.5068 & 14.7212 & 29.268&11.7607&23.1165&14,655&29.176&11.645&3.773 \\
+			
+			\hline
+			\\
+			\multirow{2}{*}{Inverse Contra-harmonic}
+			&MSE:& 0.449&0.0054&0.576&0.0055&0.644&0.0051&0.575&0.040&0.743&0.0058&0.743&0.0109 \\
+			&PSNR: & 3.471&22.654&2.392&22.587&1.986&22.910&2.397&13.939&1.285&22.399&1.288&19.621 \\
+			
+			\hline
+		\end{tabulary}\par 
+	\end{table}
+	=======================================	
+						%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\pagebreak
+	
+	%% Example - 3 for multirow & multicolumn %%
+	{\Large \textbf{\textit{Multirow / multicolumn Table - 3}}}
+	
+	\begin{table}[H]
+		\caption {Results of tumor segmentation for HGG, LGG and Combined Cases;
+			Proposed work in comparison with Ref. 17} 
+		{\begin{tabular}{|c|c|c|c|c|c|c|} \toprule
+				
+				Method & Dataset Used & \multicolumn{2}{c}{Grade} & DSC & PPV & Sensitivity\\
+				\cline{1-7}
+				\multirow{6}{*}{Proposed}
+				& \multirow{6}{*}{BRATS 2017} & \multirow{3}{*}{HGG} & 
+				Complete & 0.82 & 0.84 & 0.83\\
+				&&&Core & \bf0.76 & 0.86 & \bf0.74\\
+				&&&Enhanced & \bf0.73 & \bf0.78 & 0.74\\
+				\cline{3-7}
+				
+				&&\multirow{3}{*}{LGG} & 
+				Complete & \bf0.76 & \bf0.92 & 0.69\\
+				&&&Core & 0.34 & \bf0.86 & 0.28\\
+				&&&Enhanced & 0.33 & 0.54 & 0.62\\
+				\cline{3-7}
+				
+				&&\multirow{3}{*}{Combined} & 
+				Complete & 0.80 & \bf0.86 & 0.79\\
+				&&&Core & 0.65 & \bf0.86 & 0.62\\
+				&&&Enhanced & \bf0.62 & \bf0.69 & \bf0.71\\
+				\cline{1-7}
+				
+				\multirow{6}{*}{In Pereira {\it et al.}\cite{17}}
+				& \multirow{6}{*}{BRATS 2013} & \multirow{3}{*}{HGG} & 
+				Complete & 0.88 & 0.91 & 0.86\\
+				&&&Core & 0.76 & 0.90 & 0.74\\
+				&&&Enhanced & 0.73 & 0.72 & 0.81\\
+				\cline{3-7}
+				
+				&&\multirow{3}{*}{LGG} & 
+				Complete & 0.65 & 0.54 & 0.86\\
+				&&&Core & 0.53 & 0.42 & 0.86\\
+				&&&Enhanced & 0.00 & 0.00 & 0.00\\
+				\cline{3-7}
+				
+				&&\multirow{3}{*}{Combined} & 
+				Complete & 0.84 & 0.85 & 0.86\\
+				&&&Core & 0.72 & 0.82 & 0.76\\
+				&&&Enhanced & 0.62 & 0.60 & 0.68\\
+				
+				\bottomrule		
+		\end{tabular}}	
+	\end{table}
+	
+\end{document}
